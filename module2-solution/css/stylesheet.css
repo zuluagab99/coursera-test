@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 .row {
     width: 100%;
@@ -9,4 +10,38 @@
         background-color: blue;
         width: 33%;
     }
+}
+.title {
+    float: right;
+    width: 120px;
+    font-family: lobster;
+}
+div {
+    border: 4px solid black;
+}
+/* Screen display desktop shape over 992px or above */  
+
+@media (min-width: 992px){
+    .item1, .item2, .item3 {
+        float: left;
+        background-color: blue;
+        width: 33.33%;
+    }
+}
+
+/* Screen display tablet shape among 768px and 991px */
+@media (min-width:768px) and (max-width: 991px) {
+    div { 
+        float: left;
+        background-color: red;
+        width: 50%;
+    }   
+}
+/* Screen display tablet shape among 768px and 991px */
+@media (max-width: 767px) {
+    div { 
+        float: left;
+        background-color: green;
+        width: 100%;
+    }   
 }
